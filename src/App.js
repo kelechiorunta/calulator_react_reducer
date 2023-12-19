@@ -241,6 +241,7 @@ const App = () => {
           //memoizedoperator(sign);
         }, [dispatchResult, sign, dispatch])}
         mydigits={digit}
+        myoperator={operator}
         mytype={"+"}
         key={"+"}
       />

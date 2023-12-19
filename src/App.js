@@ -227,9 +227,10 @@ const App = () => {
         key={"3"}
       />
       <Button
-        myresult={useMemo(() => {
-          return memoizedresult;
-        }, [sign])}
+        // myresult={useMemo(() => {
+        //   return memoizedresult;
+        // }, [sign])}
+        myresult={result}
         mydispatch={useCallback(() => {
           dispatchResult({
             type: "COMPUTE",
@@ -238,7 +239,7 @@ const App = () => {
           reset();
           sign = "+";
           //memoizedoperator(sign);
-        }, [dispatchResult, sign])}
+        }, [dispatchResult, sign, dispatch])}
         mydigits={digit}
         mytype={"+"}
         key={"+"}
